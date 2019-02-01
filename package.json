@@ -1,0 +1,15 @@
+{
+  "name": "design-system-deck-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mdx-deck": "^1.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "author": "",
+  "license": "ISC"
+}
