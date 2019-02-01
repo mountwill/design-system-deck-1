@@ -3,6 +3,8 @@ export { default as theme } from "./theme.js";
 import { Head } from "mdx-deck";
 import { Image } from "mdx-deck";
 import { Invert } from "mdx-deck/layouts";
+import { Code } from "mdx-deck";
+import { Appear } from "mdx-deck";
 
 <Head>
   <title>Design System</title>
@@ -25,14 +27,214 @@ import { Invert } from "mdx-deck/layouts";
 
 export default Invert;
 
+<Image src="definition.png" size="80%" />
+
+---
+
+export default Invert;
+
 <Image src="oreos.jpeg" size="50%" />
 
 ---
 
-```jsx
-<CodeSnippet />
-```
+export default Invert;
+
+<Image src="components.png" size="50%" />
+
+---
+
+Components
+
+<Appear>
+  <div>
+    <Code className="jsx">{`const DesignSystemDemo = ({ deck, theme }) => (
+  <Deck theme={theme}>
+    <Slides deck={deck} />
+  </Deck>
+);`}</Code>
+  </div>
+</Appear>
+---
+
+### ~~Styleguide~~
+
+---
+
+### ~~Styleguide~~
+
+### Design System
+
+---
+
+### Why?
+
+<ul style={{ textAlign: "left" }}>
+  <Appear>
+    <li>Developer experience</li>
+    <li>The styleguide is old and effectively unmaintained</li>
+  </Appear>
+</ul>
+
+---
+
+## Developer experience
+
+---
+
+Classnames API
+
+<div style={{ fontSize: "16px" }}>
+<Code
+  className="jsx"  
+>
+{`<div className="display-block btn-full txt-l box box-basic type-s pbxxs mvn phm xs-phs bg-brighter border-none-a-xs">`}
+</Code>
+</div>
+---
+
+System Props API
+
+<ul style={{ textAlign: "left" }}>
+  <Appear>
+    <li>Consistent</li>
+    <li>Discoverable</li>
+    <li>Documented</li>
+  </Appear>
+</ul>
+
+<Code className="jsx">
+  {`<Box
+  display="block"
+  bg="white"
+  border={{ xs: 0, s: 1 }}
+  textAlign="left"
+  fontSize="s"
+  pb="xxs"
+  px={{ xs: "s", s: "m" }}
+/>
+`}
+</Code>
+
+---
+
+### Responsive styles
+
+<Code className="jsx">{`<Box px={{ xs: "s", s: "m" }} />`}</Code>
+
+<Appear>
+  <div style={{ display: "flex", paddingLeft: "200px" }}>
+    <Image src="styled-system-logo.svg" width="60px" height="60px" />
+    <div style={{ paddingTop: "8px" }}>styled-system</div>
+  </div>
+</Appear>
+
+---
+
+## Styleguide
+
+---
+
+<Code className="javascript">
+  {`/* 
+\n Media Profile
+\n ** Deprecated — Do not use **
+\n TODO: Replace instances of '.media-profile' with '.arrange'
+\n https://github.com/change/styleguide/issues/306
+\n*/`}
+</Code>
+
+---
+
+## How?
+
+---
+
+## Now
+
+#### Classnames
+
+https://github.com/change/fe/pull/11170
+
+---
+
+<div>
+  <h3>React</h3>
+  <Code className="jsx">
+    {`<Box mb="xs" mt={{ xs: 'xxs', sm: 'n' }} p="s" color="red.brand">
+  This is a responsive box
+</Box>
+`}
+  </Code>
+</div>
+
+<Appear>
+  <div>
+    <h3>Output html</h3>
+    <Code className="jsx">
+      {`<div class="xs-mtxxs sm-mtn mbxs pas type-branded">
+  This is a responsive box
+</div>
+`}
+    </Code>
+  </div>
+</Appear>
+
+---
+
+## Future
+
+<Appear>
+  <h2>css-in-js</h2>
+  <h2>Emotion 👩‍🎤</h2>
+</Appear>
+
+---
+
+## What?
+
+---
+
+### Why css-in-js
+
+<ul style={{ textAlign: "left" }}>
+  <Appear>
+    <li>Developer experience</li>
+    <li>Style Encapsulation</li>
+    <li>Tooling/bundling</li>
+  </Appear>
+</ul>
+
+---
+
+<Image src="carbon-3.png" height="950px" width="1070px" />
+
+---
+
+### Living Docs
+
+<Image
+  src="docz_logo.svg"
+  width="420px"
+  height="122px"
+  style={{ marginTop: "100px" }}
+/>
+
+##### https://www.docz.site
+
+---
+
+<Image src="docz_example.png" height="776px" width="1634px" />
+
+---
+
+### Docz example
+
+##### SmoothUI
 
 ---
 
 # The end
+
+---
+
+# Questions?
