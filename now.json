@@ -1,4 +1,6 @@
 {
   "name": "design-system-deck-1",
+  "type": "static",
+  "public": true,
   "version": 2
 }
