@@ -1,6 +1,5 @@
 {
   "name": "design-system-deck-1",
-  "type": "static",
-  "public": true,
+  "builds": [{ "src": "deck.mdx", "use": "@now/mdx-deck" }],
   "version": 2
 }
